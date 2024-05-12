@@ -10,34 +10,30 @@
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
     <style>
       :root {
-       --mdui-color-primary-light: 82, 95, 119;
-       --mdui-color-primary-dark: 186, 199, 227;
-      }
-      .foo {
-       background-color: rgb(var(--mdui-color-primary));
-      }
-      .bar {
-        background-color: rgba(var(--mdui-color-primary));
+        --mdui-color-primary-light: 82, 95, 119;
+        --mdui-color-primary-dark: 186, 199, 227;
+        --mdui-color-secondary-container: 214,227,255;
+        --mdui-color-on-secondary-container-light:  15, 28, 49;
       }
 
       @font-face{
         font-family: 'Google Sans Regular';
         src: url(assets/fonts/GoogleSans-Regular.ttf) format('truetype');
       }
-      .titlebox {
+      .box {
         color: #3C4043;
         font-family: 'Google Sans Regular';
         max-width: 500px;
         padding: 40px;
       }
       .card{
+        display: block;
         padding: 20px;
-        width: 500px;
       }
     </style>
   </head>
   <body style="margin: 40px; -webkit-tap-highlight-color: rgba(0,0,0,0);">
-    <div class="titlebox">
+    <div class="box">
      <img style="border-radius: 50%; border: 3px solid #EAE9ED;" src="assets/avatar.png" width="100" height="100" alt="Avatar.">
      <h1 style="font-size:1.9em; letter-spacing: 2px;">Welcome to this website.</h1>
      <p>If you see this text, you will see this text.</p>
