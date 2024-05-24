@@ -46,7 +46,6 @@
       .card {
         width: 100%;
         padding: 20px;
-        height: 100%;
         --shape-corner: var(--mdui-shape-corner-extra-large);
       }
     </style>
@@ -75,7 +74,7 @@
           </div>
         </div>
       </div>
-      <div class="box">
+      <div class="box" style="flex-direction: column;">
         <mdui-card class="card">
           <h2>Card2</h2>
           <p>Passage</p>
@@ -84,6 +83,15 @@
             <mdui-button variant="tonal">Button</mdui-button>
           </div>
         </mdui-card>
+        <mdui-card class="card">
+          <h2>Card3</h2>
+          <p>Passage</p>
+          <div style="text-align: right;">
+            <mdui-button variant="filled">Button</mdui-button>
+            <mdui-button variant="tonal">Button</mdui-button>
+          </div>
+        </mdui-card>
+
       </div>
     </div>
   </body>
