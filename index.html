@@ -34,25 +34,44 @@
       @media (min-width: 850px) {
         .conlumn {
           flex-direction: row;
+          width: 100%;
+          padding: 10px 50px;
+        }
+        #main {
+          width: 300px;
+        }
+        #other {
+          width: 70%;
+        }
+      }
+      @media (max-width: 850px) {
+        #main {
+          padding-bottom: 0px;
+        }
+        #main .card {
+          margin-bottom: 10px;
+        }
+        #other {
+          padding-top: 0px;
         }
       }
       .box {
         display: flex;
         color: #3C4043;
         font-family: 'Google Sans Regular';
-        max-width: 500px;
         padding: 20px;
       }
       .card {
         width: 100%;
         padding: 20px;
+        margin-bottom: 15px;
         --shape-corner: var(--mdui-shape-corner-extra-large);
       }
     </style>
   </head>
   <body>
     <div class="conlumn">
-      <div class="box">
+      <div id="main" class="box">
         <div>
           <img style="border-radius: 50%; border: 3px solid #EAE9ED;" src="assets/images/avatar.png" width="100" height="100" alt="Avatar.">
           <h1 style="font-size:1.9em; letter-spacing: 2px;">Welcome to this website.</h1>
@@ -74,7 +93,7 @@
           </div>
         </div>
       </div>
-      <div class="box" style="flex-direction: column;">
+      <div id="other" class="box" style="flex-direction: column;">
         <mdui-card class="card">
           <h2>Card2</h2>
           <p>Passage</p>
@@ -91,7 +110,6 @@
             <mdui-button variant="tonal">Button</mdui-button>
           </div>
         </mdui-card>
-
       </div>
     </div>
   </body>
