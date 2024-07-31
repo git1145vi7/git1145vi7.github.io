@@ -19,7 +19,25 @@ body {
 
 .card {
   width: 100%;
-  padding: 20px;
+  padding: 30px;
   margin-bottom: 15px;
-  --shape-corner: var(--mdui-shape-corner-extra-large);
+  --shape-corner: var(--mdui-shape-corner-extra-large) !important;
+  p{
+    margin-top: auto; 
+    margin-bottom: auto;
+  }
+  p.titleparagraph{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+    .titleicon{
+      margin-right: 3px;
+      vertical-align: middle;
+    }
+  }
+  .buttongroup{
+    text-align: right;
+    margin-top: 15px;
+  }
 }
