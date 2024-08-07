@@ -29,36 +29,36 @@
       .conlumn {
         display: flex;
         flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
       }
+
       @media (min-width: 850px) {
         .conlumn {
           flex-direction: row;
           width: 100%;
           padding: 10px 50px;
+          margin-left: 0;
+          margin-right: 0;
         }
-        #main {
-          width: 50%;
-        }
+        #main,
         #other {
           width: 50%;
         }
       }
-      @media not (min-width: 850px) {
-        .conlumn {
-          margin-left: 10%;
-          margin-right: 10%;
-        }
-        #main {
-          padding-bottom: 0px;
-        }
-        #main.card {
-          margin-bottom: 10px;
-        }
-        
-        #other {
-          padding-top: 0px;
-        }
+
+      #main {
+        padding-bottom: 0;
       }
+
+      #main.card {
+        margin-bottom: 10px;
+      }
+
+      #other {
+        padding-top: 0;
+      }
+
       .box {
         color: #3c4043;
         font-family: "Google Sans Regular";
