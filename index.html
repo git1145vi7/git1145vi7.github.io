@@ -8,20 +8,20 @@
     />
     <title>🧐你来这里干什么</title>
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/mdui@2/mdui.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
       rel="icon"
       href="assets/images/favicon.ico"
       type="image/x-icon"
     />
     <link
       href="style/style.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/mdui@2/mdui.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
@@ -66,7 +66,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="blue">
     <div class="conlumn">
       <div
         id="main"
@@ -126,9 +126,9 @@
           ></mdui-divider>
           <div>
             <mdui-card class="card">
-              <p class="titleparagraph">
+              <p class="tp">
                 <mdui-icon
-                  class="titleicon"
+                  class="ti"
                   name="access_time--rounded"
                 ></mdui-icon>
                 当前时间
@@ -141,7 +141,7 @@
               </p>
               <p id="currentDate">currentDate</p>
               <script src="JavaScript/display-datetime.js"></script>
-              <div class="buttongroup">
+              <div class="bg">
                 <mdui-button
                   variant="filled"
                   icon="search--rounded"
@@ -161,15 +161,15 @@
         style="flex-direction: column"
       >
         <mdui-card class="card">
-          <p class="titleparagraph">
+          <p class="tp">
             <mdui-icon
-              class="titleicon"
+              class="ti"
               name="web_asset--rounded"
             ></mdui-icon>
             网站内容没想好 /_ \
           </p>
           <p style="margin-bottom: 50px">有人提提建议吗 (*^_^*)</p>
-          <div class="buttongroup">
+          <div class="bg">
             <mdui-button
               variant="filled"
               href="https://github.com/git1145vi7/git1145vi7.github.io/"
@@ -198,17 +198,17 @@
           </div>
         </mdui-card>
         <mdui-card class="card">
-          <p class="titleparagraph">标题</p>
+          <p class="tp">标题</p>
           <p>段落</p>
-          <div class="buttongroup">
+          <div class="bg">
             <mdui-button variant="filled">按钮</mdui-button>
             <mdui-button variant="tonal">按钮</mdui-button>
           </div>
         </mdui-card>
         <mdui-card class="card">
-          <p class="titleparagraph">标题</p>
+          <p class="tp">标题</p>
           <p>段落</p>
-          <div class="buttongroup">
+          <div class="bg">
             <mdui-button variant="filled">Button</mdui-button>
             <mdui-button variant="tonal">Button</mdui-button>
           </div>
