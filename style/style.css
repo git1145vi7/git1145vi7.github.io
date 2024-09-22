@@ -4,10 +4,15 @@
 }
 
 :root {
-  --mdui-color-primary-light: 82, 95, 119 ;
-  --mdui-color-primary-dark: 186, 199, 227 ;
-  --mdui-color-secondary-container-light: 214, 227, 255 ;
-  --mdui-color-on-secondary-container-light: 15, 28, 49 ;
+  --mdui-color-primary-light: 82, 95, 119;
+  --mdui-color-primary-dark: 186, 199, 227;
+  --mdui-color-on-primary-dark: 32, 33, 36;
+  --mdui-color-secondary-container-light: 214, 227, 255;
+  --mdui-color-secondary-container-dark: 59, 71, 94;
+  --mdui-color-on-secondary-container-light: 15, 28, 49;
+  --mdui-color-on-secondary-container-dark: 224, 226, 236;
+  --mdui-color-surface-container-low-dark: 33, 34, 40;
+  --mdui-color-background-dark: 27, 27, 31;
 }
 
 :not(:defined) {
@@ -26,11 +31,11 @@ body {
   padding: 30px;
   margin-bottom: 15px;
   --shape-corner: var(--mdui-shape-corner-extra-large);
-  box-shadow: var(--mdui-elevation-level0)
+  box-shadow: var(--mdui-elevation-level0);
 }
 
 .card p {
-  margin-top: auto; 
+  margin-top: auto;
   margin-bottom: auto;
 }
 
