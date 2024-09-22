@@ -10,6 +10,10 @@
   --mdui-color-on-secondary-container-light: 15, 28, 49 ;
 }
 
+:not(:defined) {
+  visibility: hidden;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -22,6 +26,7 @@ body {
   padding: 30px;
   margin-bottom: 15px;
   --shape-corner: var(--mdui-shape-corner-extra-large);
+  box-shadow: var(--mdui-elevation-level0)
 }
 
 .card p {
