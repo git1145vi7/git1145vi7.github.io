@@ -15,6 +15,10 @@
   --mdui-color-background-dark: 27, 27, 31;
 }
 
+mdui-button{
+  line-height: normal;
+}
+
 :not(:defined) {
   visibility: hidden;
 }

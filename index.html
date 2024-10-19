@@ -140,20 +140,51 @@
                 style="font-size: 30px"
               >
                 <mdui-linear-progress></mdui-linear-progress>
-
               </p>
-              <p id="currentDate">
-              </p>
+              <p id="currentDate"></p>
               <script src="JavaScript/display-datetime.js"></script>
               <div class="bg">
+                <mdui-dialog
+                  close-on-overlay-click
+                  id="timeD"
+                  headline="确定要打开新的页面吗？"
+                  description="这将会打开 https://time.is/"
+                >
+                  <mdui-button
+                    slot="action"
+                    variant="text"
+                    id="timeDcloseB"
+                    >算了</mdui-button
+                  >
+                  <mdui-button
+                    slot="action"
+                    variant="tonal"
+                    href="https://time.is/"
+                    target="_blank"
+                    >肘!</mdui-button
+                  >
+                </mdui-dialog>
                 <mdui-button
                   variant="filled"
                   icon="search--rounded"
                   end-icon="arrow_forward--rounded"
-                  href="https://time.is/"
                   target="_blank"
                   >查看当前时间</mdui-button
                 >
+                <script>
+                  const dialog = document.querySelector("#timeD")
+                  const openButton = dialog.nextElementSibling
+                  const closeButton = dialog.querySelector("#timeDcloseB")
+
+                  openButton.addEventListener(
+                    "click",
+                    () => (dialog.open = true)
+                  )
+                  closeButton.addEventListener(
+                    "click",
+                    () => (dialog.open = false)
+                  )
+                </script>
               </div>
             </mdui-card>
           </div>
